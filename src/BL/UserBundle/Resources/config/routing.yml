@@ -1,3 +1,23 @@
 bl_user_homepage:
     path:     /hello/{name}
     defaults: { _controller: BLUserBundle:Default:index }
+
+bl_user_index:
+    path:     /user/index
+    defaults: { _controller: BLUserBundle:User:index }
+
+bl_user_add:
+    path:     /user/add
+    defaults: { _controller: BLUserBundle:User:add }
+
+bl_user_edit:
+    path:     /user/edit/{id}
+    defaults: { _controller: BLUserBundle:User:edit }
+
+bl_user_view:
+    path:     /user/view/{id}
+    defaults: { _controller: BLUserBundle:User:view }
+
+bl_user_delete:
+    path:     /user/delete/{id}
+    defaults: { _controller: BLUserBundle:User:delete }
