@@ -297,7 +297,7 @@ class User
      *
      * @return \DateTime 
      */
-    public function getUpdateAt()
+    public function getUpdatedAt()
     {
         return $this->updatedAt;
     }
