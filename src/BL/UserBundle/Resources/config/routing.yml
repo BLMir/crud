@@ -10,6 +10,11 @@ bl_user_add:
     path:     /user/add
     defaults: { _controller: BLUserBundle:User:add }
 
+bl_user_create:
+    path:     /user/create
+    defaults: { _controller: BLUserBundle:User:create }
+    methods: POST
+
 bl_user_edit:
     path:     /user/edit/{id}
     defaults: { _controller: BLUserBundle:User:edit }
@@ -21,3 +26,10 @@ bl_user_view:
 bl_user_delete:
     path:     /user/delete/{id}
     defaults: { _controller: BLUserBundle:User:delete }
+
+bl_user_redirect_add:
+    path:     /user/create
+    defaults:  
+            _controller: BLUserBundle:User:add
+            path: /user/add
+            permanent: true 
